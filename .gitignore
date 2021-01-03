@@ -1,0 +1,12 @@
+# packages
+node_modules/
+package-lock.json
+
+# local files
+.idea/
+.DS_Store
+*.log
+static/src/*
+!static/src/img/
+static/src/img/*
+!static/src/img/.gitkeep
