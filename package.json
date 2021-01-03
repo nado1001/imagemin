@@ -1,11 +1,23 @@
 {
-  "name": "imagemin",
+  "name": "imagemin-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm-run-all -p watch/*",
+    "imagemin": "node imagemin.js",
+    "watch/img": "onchange \"static/src\" -- npm run imagemin"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "imagemin": "^7.0.1",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-pngquant": "^9.0.1",
+    "imagemin-webp": "^6.0.0",
+    "onchange": "^7.1.0",
+    "watch": "^1.0.2"
+  }
 }
